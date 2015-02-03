@@ -4,8 +4,13 @@ public class Introductions {
   
     public static void main(String[] args) {
         Console console = System.console();
-        // Write things with printf
-        console.printf("Hello");
+        //set up a string datatype with the variable firstName
+        String firstName = "Joshua";
+        // Print formatted text with printf. 
+        // \n is an escape sequence to break to the next line without breaking the code.
+        // %s is a format specifier, which is a parameter of printf, where s stands for string
+        console.printf("Hello %s\n", firstName);
+        console.printf("%s is learning to write Java\n", firstName);
   }
 }
 
