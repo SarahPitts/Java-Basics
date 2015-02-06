@@ -5,7 +5,8 @@ public class Introductions {
     public static void main(String[] args) {
         Console console = System.console();
         //set up a string datatype with the variable firstName
-        String firstName = "Joshua";
+        //readline is a method of console which captures the data the user enters on the next line
+        String firstName = console.readLine("What is your name?  ");
         // Print formatted text with printf. 
         // \n is an escape sequence to break to the next line without breaking the code.
         // %s is a format specifier, which is a parameter of printf, where s stands for string
