@@ -1,4 +1,5 @@
 import java.io.Console;
+//io is short for input output
  
 public class Introductions {
   
