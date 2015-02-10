@@ -10,6 +10,9 @@ public class TreeStory {
             adjective - A description used to modify or describe a noun
             Enter your amazing code here!
         */
+        String name = console.readLine("What is your name?  ");
+        String adjective = console.readLine("How would you describe yourself?  ");
+        console.printf("%s is very %s", name, adjective);
     }
     
 }
