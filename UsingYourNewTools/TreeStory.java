@@ -10,10 +10,12 @@ public class TreeStory {
             adjective - A description used to modify or describe a noun
             Enter your amazing code here!
         */
-        //pulls integer from string returned
+        //sets up variable to collect age data
         String ageAsString = console.readLine("How old are you?  ");
         //set up integer datatype
-        //replaced static number with parsed string response
+        //replaces static number with parsed string response
+        //Integer is a class
+        //parseInt is a static method of Integer
         int age = Integer.parseInt(ageAsString);
         //set up a conditional
         //set up block of code insde curly brace
