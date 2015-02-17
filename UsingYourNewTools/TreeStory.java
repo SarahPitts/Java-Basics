@@ -31,7 +31,10 @@ public class TreeStory {
 		String adjective = console.readLine("Enter an adjective:  ");
 		String noun = console.readLine("Enter a noun:  ");
             //method for the string object
-            if (noun.equalsIgnoreCase("dork")) {
+            //added logical OR statement ||
+            if (noun.equalsIgnoreCase("dork") ||noun.equalsIgnoreCase("jerk") ||
+                noun.equalsIgnoreCase("nerd")
+                )  {
                 console.printf(" That language is not allowed.  Exiting.  \n\n");
                 System.exit(0);
             }
