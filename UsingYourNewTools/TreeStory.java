@@ -29,15 +29,21 @@ public class TreeStory {
         }
         String name = console.readLine("Enter a name:  ");
 		String adjective = console.readLine("Enter an adjective:  ");
-		String noun = console.readLine("Enter a noun:  ");
+        //added do while to prompt user until acceptable response is given
+        //declared variable outside to solve scope error
+        String noun;
+        do {
+            noun = console.readLine("Enter a noun:  ");
             //method for the string object
             //added logical OR statement ||
             if (noun.equalsIgnoreCase("dork") ||noun.equalsIgnoreCase("jerk") ||
                 noun.equalsIgnoreCase("nerd")
                 )  {
-                console.printf(" That language is not allowed.  Exiting.  \n\n");
-                System.exit(0);
-            }
+                console.printf(" That language is not allowed.  Try again.  \n\n");
+            }  
+        } while(noun.equalsIgnoreCase("dork") ||    noun.equalsIgnoreCase("jerk") ||
+                noun.equalsIgnoreCase("nerd"));
+		
 		String adverb = console.readLine("Enter an adverb:  ");
 		String verb = console.readLine("Enter a verb ending with -ing:  ");
 
