@@ -32,17 +32,18 @@ public class TreeStory {
         //added do while to prompt user until acceptable response is given
         //declared variable outside to solve scope error
         String noun;
+        boolean isInvalidWord;
         do {
             noun = console.readLine("Enter a noun:  ");
+            //dry up our code with a boolean
+            isInvalidWord = (noun.equalsIgnoreCase("dork") ||noun.equalsIgnoreCase("jerk") ||
+                noun.equalsIgnoreCase("nerd"));
             //method for the string object
             //added logical OR statement ||
-            if (noun.equalsIgnoreCase("dork") ||noun.equalsIgnoreCase("jerk") ||
-                noun.equalsIgnoreCase("nerd")
-                )  {
+            if (isInvalidWord)  {
                 console.printf(" That language is not allowed.  Try again.  \n\n");
             }  
-        } while(noun.equalsIgnoreCase("dork") ||    noun.equalsIgnoreCase("jerk") ||
-                noun.equalsIgnoreCase("nerd"));
+        } while(isInvalidWord);
 		
 		String adverb = console.readLine("Enter an adverb:  ");
 		String verb = console.readLine("Enter a verb ending with -ing:  ");
